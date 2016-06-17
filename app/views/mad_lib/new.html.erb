@@ -1,0 +1,11 @@
+<h1> mad_lib#new </h1>
+
+<%= form_tag(create_path, :method=>'post', :multipart => true) do %>
+    <%= label_tag(:verb, "Input Verb") %>
+    <%= text_field_tag(:verb) %>
+    <%= select_tag("type", options_for_select([['Scary', '1'],
+    ['Funny', '2'],['Standard','3']], '1')) %>
+    <%= submit_tag "Save" %>
+<% end %>
+
+end
