@@ -7493,3 +7493,51 @@ Started GET "/pusher/auth?callback=Pusher.auth_callbacks%5B%2724%27%5D&socket_id
 
 
 Started GET "/pusher/auth?callback=Pusher.auth_callbacks%5B%2725%27%5D&socket_id=200572.4706087&channel_name=private-users-56ec7bbd127038ec6700001a" for 127.0.0.1 at 2016-06-13 11:42:54 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-06-16 20:28:25 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 374ms (Views: 366.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-06-16 20:28:26 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-06-16 20:28:26 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-06-16 20:31:36 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib/styles.css" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/mad_lib.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-16 20:31:36 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-16 20:31:36 -0700
