@@ -1,0 +1,122 @@
+/* 
+Made for ChickTech Seattle Chapter July Workshop 2016
+*******************
+
+Fonts
+
+Base font: 
+font-family: 'Nunito', sans-serif;
+Heading font (pretty close to the MadLibs font): 
+font-family: 'Neuton', serif;
+Fill in the Blank Word Type Label (handwriting esque):
+font-family: 'Walter Turncoat', cursive; 
+*******************
+
+Base Font size: 16px;
+*******************
+
+Refer to Foundation documentation first before adding our own styling! 
+*/
+
+
+/* General reset for the page, so that things show up consistently */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif; /*this font will show unless something else is specified */
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px; /*this will be our base size, we'll use REM to multiply the size for different uses. 2REM is 2 x 16px = 32px, .5REM is 8px */
+	margin-bottom: 3em; /* gives us some space at the bottom of the page*/
+}
+
+/* Global Styles */
+
+.madlib-container {
+	width: 60%;
+	margin: 0 auto; /*centers the page */
+}
+
+/* header styles */
+.madlib-title h1{
+	font-family: 'Neuton', serif;
+	margin: .6em auto 0 auto;
+	font-size: 4.5em;
+}
+
+.madlib-title h2{
+	font-family: 'Nunito', sans-serif;	
+	font-size: 2rem;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+
+/* Results page styling*/
+.madlib-body {
+	font-size: 2.5rem;
+	line-height: 6rem;
+}
+
+.fill_in_word {
+	background-color: black;
+	color: white;
+	padding-right: .25rem;
+	padding-left: .25rem;
+	font-family: 'Walter Turncoat', cursive; 
+}
+
+/*override foundation button colors and font */
+button, 
+.button{
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-family: 'Walter Turncoat', cursive; 
+	font-size: 2.5rem;
+}
+button:hover,
+.button:hover {
+	background-color: #d3d3d3;
+}
+/*override foundation thumbnail effects on the header */
+
+.thumbnail {
+	border: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	transition: none;
+	outline: none;
+}
+.thumbnail:hover {
+	outline: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/* for our purposes, the screen is breaking funny with foundation so we are editing a few things so that this will look better on your devices */
+@media screen and (max-width: 680px){
+	.thumbnail img {
+		width: 80%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 39.9375em){
+	.media-object.stack-for-small .media-object-section {
+		text-align: center;
+	}
+	.media-object.stack-for-small .media-object-section img{
+		width: 80%;
+		height: auto;
+	}
+	.media-object.stack-for-small .media-object-section {
+		padding-bottom: .1rem;
+	}
+	.madlib-body {
+		font-size: 2rem;
+	}
+}
