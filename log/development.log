@@ -7493,3 +7493,436 @@ Started GET "/pusher/auth?callback=Pusher.auth_callbacks%5B%2724%27%5D&socket_id
 
 
 Started GET "/pusher/auth?callback=Pusher.auth_callbacks%5B%2725%27%5D&socket_id=200572.4706087&channel_name=private-users-56ec7bbd127038ec6700001a" for 127.0.0.1 at 2016-06-13 11:42:54 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:29:43 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 545ms (Views: 535.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/mad_lib.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:29:44 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 18:29:48 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 45ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/create" for ::1 at 2016-07-13 18:29:56 -0700
+Processing by MadLibController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2BcI9IESAHirC8PY+OkXiNa/cE4ejqMfY2xuG1mzRXcc4SRyqWqF73vnfpk/Qklbr19nn2O/PgZGr1pnw+Ci5g==", "verb"=>"run", "type"=>"1", "commit"=>"Save"}
+  Rendered mad_lib/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 18:30:04 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-07-13 18:34:51 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/application.self-6469ca52d931876a5aaee158404386f27ce8ecdf21b54a0499d1e295a35efc88.css?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:34:51 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:34:54 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/application.self-6469ca52d931876a5aaee158404386f27ce8ecdf21b54a0499d1e295a35efc88.css?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:34:55 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:35:06 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 242ms (Views: 233.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/application.self-6469ca52d931876a5aaee158404386f27ce8ecdf21b54a0499d1e295a35efc88.css?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:35:06 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:36:19 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 237ms (Views: 227.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6469ca52d931876a5aaee158404386f27ce8ecdf21b54a0499d1e295a35efc88.css?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:36:20 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:36:55 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/application.self-6469ca52d931876a5aaee158404386f27ce8ecdf21b54a0499d1e295a35efc88.css?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:36:55 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:37:13 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:37:14 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:37:42 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 33.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:37:42 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:44:43 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:44:43 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:45:40 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:45:40 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:46:15 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:46:16 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 18:49:08 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 18:49:09 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 18:49:13 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 18:51:08 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib/show" for ::1 at 2016-07-13 18:51:55 -0700
+Processing by MadLibController#show as HTML
+  Rendered mad_lib/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)

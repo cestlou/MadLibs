@@ -41,3 +41,10 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 	4) Connect backend with front end 
 	5) Test! 
 
+Steps to get up and running: 
+
+Clone Repo 
+Gem install Bundler
+bundle install 
+rails s
+
