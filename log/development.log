@@ -7926,3 +7926,325 @@ Started GET "/mad_lib/show" for ::1 at 2016-07-13 18:51:55 -0700
 Processing by MadLibController#show as HTML
   Rendered mad_lib/show.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 24ms (Views: 23.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib" for ::1 at 2016-07-13 19:22:49 -0700
+
+
+Started GET "/" for ::1 at 2016-07-13 19:22:54 -0700
+Processing by MadLibController#index as HTML
+  Rendered mad_lib/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 249ms (Views: 238.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:22:57 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+...ppend=( submit_tag "Save" class: => "large button");@output_...
+...                               ^
+/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+  app/views/mad_lib/new.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/mad_lib/new.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.9ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.6ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (126.7ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:22:57 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+...ppend=( submit_tag "Save" class: => "large button");@output_...
+...                               ^
+/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+  app/views/mad_lib/new.html.erb:68: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/mad_lib/new.html.erb:70: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.9ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (45.8ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.8ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:23:28 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+...ppend=( submit_tag "Save" class: => "large button");@output_...
+...                               ^):
+  app/views/mad_lib/new.html.erb:61: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.6ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.0ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.5ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:23:59 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/brittanybrassell/repos/MadLibs/app/views/mad_lib/new.html.erb:61: syntax error, unexpected =>
+...=( submit_tag "Save", class: => "large button");@output_buff...
+...                               ^):
+  app/views/mad_lib/new.html.erb:61: syntax error, unexpected =>
+
+
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.2ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (43.4ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/brittanybrassell/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (94.4ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:24:23 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:24:24 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:24:46 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:24:47 -0700
+
+
+Started POST "/create" for ::1 at 2016-07-13 19:24:51 -0700
+Processing by MadLibController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kC7tFSC7QSpIVNWxIMR45aLwt2lvB4Z/jEbznuTCt/xU2MGTCMPEvZi4aPDnbyY22xCguBI2G2aphcfifpFQbQ==", "type"=>"1", "commit"=>"Save"}
+  Rendered mad_lib/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:26:26 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:26:27 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:26:52 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:26:52 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:27:14 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:27:15 -0700
+
+
+Started GET "/mad_lib/new" for ::1 at 2016-07-13 19:30:00 -0700
+Processing by MadLibController#new as HTML
+  Rendered mad_lib/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
