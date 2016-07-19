@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get "mad_lib/show" => 'mad_lib#show'
 
+  post :create, to: "mad_lib#create", as: :mad_lib_create
+
   get '*path' => redirect('/404.html'), via: :all
 
 
