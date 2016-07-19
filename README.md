@@ -43,67 +43,68 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 
 ###Getting Set Up ###
 
--#### GitHub ####
+- **GitHub**
 	- You're going to need to access this codebase (called a "repository"), so why don't we start by getting set up on Github. 
+	
 	- Steps: 
-	-- Go here: https://github.com/join?source=header-home
-	-- Create a username (something you don't mind other people seeing - like a twitter or snapchat username, or your first initial and last name, any combo really)
-	-- Enter your email
-	-- Set a password (IMPORTANT!!! Make it easy to remember, you're going to use it throughout this project)
-	-- Click the Create an Account button
-	-- Keep the unlimited public repos option selected (free) 
-	-- Click Continue
-	-- Scroll to the bottom of the survey and hit skip (or fill it out, your choice)
-	-- Continue 
-	-- You're in! 
--** Cloning a Repo
-	-- What now? Programming is full of phrases like this. When you clone a repo you are copying down all of the files in a project so that you too can work on it. The coolest part is that while it's the same project, it's your own version of it (or your own branch, as Github calls it), so you can make changes, add stuff, delete things and then if you think it's something the owner of the code would want to include in the main copy of the project you can submit it to them via a pull request to add in to their code. We won't be doing this today, but it is helpful if you and some friends want to make something together. 
-	-- Open this link: https://github.com/CestLou/MadLibs
-	-- Click the green button on the right side that says "Clone or Download"
-	-- Select "Clone with HTTPS"
-	-- Copy the URL in the box
-	-- Open your Terminal (Shortcut: Command Button + Spacebar, type in "terminal")
-	-- Type the following command: git clone [copied url here] 
-	-- hit Enter
-	-- you have officially cloned the repo. 
--** Let's look inside! 
-	-- Open the folder that we just cloned from github, it's called MadLibs, right click it and open with sublime text (that's our text editor)
-	-- We'll leave this open and come back after we initialize some stuff
--** Initialize the code base! 
-	-- Ruby is a very particular language that has a good few rules, to obey them better we're going to install a few things it relies on. Bring that terminal window back and type the following in this order, hitting enter after every line. 
-	-- sudo gem install rails
-	-- gem install bundler
-	-- bundle install
-	-- Luna, what are the steps here???
--** Test Often! 
-	-- To make sure we have a proper rails project go to your terminal and type "rails s" - this will start your local server. In your browser go to localhost:3000/index.html to check it out. 
+		- Go here: https://github.com/join?source=header-home
+		- Create a username (something you don't mind other people seeing - like a twitter or snapchat username, or your first initial and last name, any combo really)
+		- Enter your email
+		- Set a password (IMPORTANT!!! Make it easy to remember, you're going to use it throughout this project)
+		- Click the Create an Account button
+		- Keep the unlimited public repos option selected (free) 
+		- Click Continue
+		- Scroll to the bottom of the survey and hit skip (or fill it out, your choice)
+		- Continue 
+		- You're in! 
+- **Cloning a Repo**
+	- What now? Programming is full of phrases like this. When you clone a repo you are copying down all of the files in a project so that you too can work on it. The coolest part is that while it's the same project, it's your own version of it (or your own branch, as Github calls it), so you can make changes, add stuff, delete things and then if you think it's something the owner of the code would want to include in the main copy of the project you can submit it to them via a pull request to add in to their code. We won't be doing this today, but it is helpful if you and some friends want to make something together. 
+	- Open this link: https://github.com/CestLou/MadLibs
+	- Click the green button on the right side that says "Clone or Download"
+	- Select "Clone with HTTPS"
+	- Copy the URL in the box
+	- Open your Terminal (Shortcut: Command Button + Spacebar, type in "terminal")
+	- Type the following command: git clone [copied url here] 
+	- hit Enter
+	- you have officially cloned the repo. 
+- **Let's look inside!** 
+	- Open the folder that we just cloned from github, it's called MadLibs, right click it and open with sublime text (that's our text editor)
+	- We'll leave this open and come back after we initialize some stuff
+- **Initialize the code base!**
+	- Ruby is a very particular language that has a good few rules, to obey them better we're going to install a few things it relies on. Bring that terminal window back and type the following in this order, hitting enter after every line. 
+	- sudo gem install rails
+	- gem install bundler
+	- bundle install
+	- Luna, what are the steps here???
+- **Test Often!**
+	- To make sure we have a proper rails project go to your terminal and type "rails s" - this will start your local server. In your browser go to localhost:3000/index.html to check it out. 
 
--** Functionality before Form
-	-- Back End Directions here... 
+- **Functionality before Form**
+	- Back End Directions here... 
 
--** Add some styling and page structure
-	-- Front End here 
+- **Add some styling and page structure**
+	- Front End here 
 
--** Commit often! 
-	-- You'll want to save your work, we're already in github so we might as well save our progress there! 
-	-- From your terminal type 
-	--- git add .
-	--- git commit -m "a note about what you just did"
-	--- git push (then follow the prompt your terminal gives you, it should be something like "git push origin master" but you'll only have to do that one time) 
+- **Commit often!**
+	- You'll want to save your work, we're already in github so we might as well save our progress there! 
+	- From your terminal type 
+		- git add .
+		- git commit -m "a note about what you just did"
+		- git push (then follow the prompt your terminal gives you, it should be something like "git push origin master" but you'll only have to do that one time) 
 
--** Deploy
-	-- We will be using <a href="#">Heroku</a> to deploy our finished madlib project. It's free, it works great with Github, and you feel a bit like a mad scientist doing it. 
-	-- Sign up for an account on Heroku: https://signup.heroku.com/login
-	-- Go here: https://toolbelt.heroku.com/ 
-	-- Download the toolbelt and follow the directions on this page. 
-	-- navigate your terminal to your working madlib game, do this by typing "cd [your directory here]" (we'll go over this more together)
-	-- terminal: heroku create YOUR_APP_NAME_HERE
-	-- if you got an error type git remote -v and call us over for help.
-	-- If you didn't get any errors... 
-	-- terminal: git push heroku master
-	-- heroku open  
+- **Deploy**
+	- We will be using <a href="#">Heroku</a> to deploy our finished madlib project. It's free, it works great with Github, and you feel a bit like a mad scientist doing it. 
+	- Sign up for an account on Heroku: https://signup.heroku.com/login
+	- Go here: https://toolbelt.heroku.com/ 
+	- Download the toolbelt and follow the directions on this page. 
+	- navigate your terminal to your working madlib game, do this by typing "cd [your directory here]" (we'll go over this more together)
+	- terminal: heroku create YOUR_APP_NAME_HERE
+	- if you got an error type git remote -v and call us over for help.
+	- If you didn't get any errors... 
+	- terminal: git push heroku master
+	- heroku open  
 
--** And that's it! Now it's your turn to add to it and share with your friends. 
+- *And that's it! Now it's your turn to add to it and share with your friends.*
 
 
 
