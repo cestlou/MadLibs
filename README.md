@@ -43,7 +43,7 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 
 ###Getting Set Up ###
 
--####GitHub####
+-#### GitHub ####
 	- You're going to need to access this codebase (called a "repository"), so why don't we start by getting set up on Github. 
 	- Steps: 
 	-- Go here: https://github.com/join?source=header-home
