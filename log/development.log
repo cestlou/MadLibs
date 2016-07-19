@@ -8248,3 +8248,43 @@ Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:30:00 -0700
+
+
+Started GET "/create" for ::1 at 2016-07-13 19:34:13 -0700
+Processing by MadLibController#show as HTML
+  Rendered mad_lib/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 230ms (Views: 220.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/animate.self-066dd43afaa891fb6cb9c597e6bd2379f2546a1489393639eafe04c3dadee305.css?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/mad_lib.self-df654e67b4935f544f637b427634ffd3de50b4ad5dbed57579b2851d25dd7ce8.css?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/styles.self-7756698c4718a814c458836a83606ae7de5a9022b706498ec61f2a6fd8d2b721.css?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/application.self-4c280ade8c742a8262c8ec8d13a1a06ad28bdca94f50509a0230b371d48f2ef4.css?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-07-13 19:34:13 -0700
+
+
+Started GET "/assets/mad_lib.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-13 19:34:14 -0700
+
+
+Started POST "/create" for ::1 at 2016-07-13 19:34:22 -0700
+Processing by MadLibController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"suKsnFnSCf+FkCYUarHy4q2vtJyFb4h2m+uXp0t/abJ2FIAacaqMaFV8m1WtGqwx1E+jTfheFW++KKPb0SyOIw==", "type"=>"1", "verb"=>"test 2", "commit"=>"Save"}
+  Rendered mad_lib/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
