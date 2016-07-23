@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+    $(document).ready(function(){
+    $('#madlib_form').on('change', function() {
+      if (this.value == 'video_game')
+      {
+				$("#video_game").addClass("show").removeClass("hide");
+				$("#space").addClass("hide");
+      }
+      else if (this.value == 'space')
+      {
+				$("#space").addClass("show").removeClass("hide");
+				$("#video_game").addClass("hide");
+      }
+			$('.madlib-form').show()
+    });
+  });
+  </script>
+
 	<!-- Foundation stylesheet -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css" rel="stylesheet" type="text/css">
 	<!-- google fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Neuton:800|Nunito|Walter+Turncoat' rel='stylesheet' type='text/css'>
-
 	<!-- animate css from https://github.com/daneden/animate.css -->
 	<link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 	<!-- our styles -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<title>Mad Libs</title>
 </head>
+
 <body>
 	<section class="madlib-container">
 		<section class="madlib-header row">
@@ -27,49 +45,89 @@
 			</div>
 			<div class="small-12 medium-6 columns">
 				<label>Choose your Madlib style
-				  <select>
-				    <option value="husker">Blank</option>
-				    <option value="starbuck">Silly</option>
-				    <option value="hotdog">Scary</option>
-				    <option value="apollo">Lorem Ipsum</option>
+				  <select id="madlib_form">
+				    <option value="blank"></option>
+				    <option value="video_game">Video Game</option>
+				    <option value="space">Kids in Space</option>
 				  </select>
 				</label>
 			</div>
-			<div class="small-12 columns">
-				<hr>
-			</div>
 		</section>
-		<section class="madlib-form">
+		<section class="madlib-form form-input">
 			<div class="small-12 columns">
 				<h3>Step #2:</h3>
 				<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
 			</div>
 			<form>
 			<!-- repeat as necessary -->
-			  <div class="row">
+			  <div class="row hide" id="video_game">
 			    <div class="medium-6 columns">
-			      <label>Input Label
+			      <label>Video Game Verb
+			        <input type="text" placeholder=".medium-6.columns">
+			      </label>
+			      <label>Video Game Verb
+			        <input type="text" placeholder=".medium-6.columns">
+			      </label>
+			      <label>Video Game Verb
 			        <input type="text" placeholder=".medium-6.columns">
 			      </label>
 			    </div>
 			    <div class="medium-6 columns">
-			      <label>Input Label
+			      <label>Video Game Verb
+              <input type="text" placeholder=".medium-6.columns">
+            </label>
+          </div>
+        </div>
+
+				<div class="row hide" id="space">
+        <div class="medium-6 columns">
+					<label>Plural Article of Clothing
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Singular Article of Clothing
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Vehicle
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Type of Excercise
 			        <input type="text" placeholder=".medium-6.columns">
-			      </label>
-			    </div>
-			  </div>
-			<!-- end repeat -->
-			<!-- submit -->
-				<div class="small-12 columns">
-					<hr>
-				</div>
+			    </label>
+					<label>Verb
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Verb (2)
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+        </div>
+        <div class="medium-6 columns">
+					<label>Plural Food
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Singular Piece of Food
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Singular Piece of Food (2)
+			        <input type="text" placeholder=".medium-6.columns">
+			    </label>
+					<label>Number
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Noun
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+					<label>Verb (3)
+						<input type="text" placeholder=".medium-6.columns">
+					</label>
+        </div>
+      </div>
+          <!-- end repeat -->
+          <!-- submit -->
 				<div class="small-12 columns">
 					<h3>Step #3:</h3>
-					
 					<%= link_to "Generate MadLib", create_path  %>
 					</button>
 				</div>
-
 			</form>
 		</section>
 	</section>
