@@ -19,6 +19,12 @@ Rails.application.routes.draw do
 
   get "mad_lib/show" => 'mad_lib#show'
 
+  get "mad_lib/video_game" => 'mad_lib#create_video_game'
+
+  get "mad_lib/video_game" => 'mad_lib#create_video_game'
+
+  get "mad_lib/space" => 'mad_lib#create_space'
+
   post :create, to: "mad_lib#create", as: :mad_lib_create
 
   get '*path' => redirect('/404.html'), via: :all
