@@ -14,13 +14,20 @@ class MadLibController < ApplicationController
     @variable = "hey I'm doing the right thing yay"
     @verb = params[:verb]
     @type = params[:type]
-    # self.type ||= false
-    case params[:type]
-    when 1
-      @conditional_variable = "this means you chose scary"
-    end
     render :show
   end
+
+  def create_video_game
+    @adjective = params[:adjective]
+
+    render :video_games
+  end
+
+  def create_space
+    @adjective = params[:adjective]
+    render :video_games
+  end
+
 
   def verb
 
