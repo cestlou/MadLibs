@@ -6,15 +6,15 @@
     $('#madlib_form').on('change', function() {
       if (this.value == 'video_game')
       {
-				$("#video_game").addClass("show").removeClass("hide");
-				$("#space").addClass("hide");
+		$("#video_game").addClass("show").removeClass("hide");
+		$("#space").addClass("hide");
       }
       else if (this.value == 'space')
       {
-				$("#space").addClass("show").removeClass("hide");
-				$("#video_game").addClass("hide");
+		$("#space").addClass("show").removeClass("hide");
+		$("#video_game").addClass("hide");
       }
-			$('.madlib-form').show()
+		$('.madlib-form').show()
     });
   });
   </script>
@@ -26,18 +26,27 @@
 	<!-- animate css from https://github.com/daneden/animate.css -->
 	<link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 	<!-- our styles -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<%= stylesheet_link_tag "application", media: "all" %>
 	<title>Mad Libs</title>
 </head>
 
 <body>
 	<section class="madlib-container">
-		<section class="madlib-header row">
-			<div class="madlib-title small-12 columns">
-				<h1>Mad Libs</h1>
-				<h2>Let's get silly... or some other subtitle</h2>
-			</div>
-		</section>
+		<section class="small-12 column">
+				<section class="madlib-header row animated zoomIn">
+					<div class="media-object stack-for-small">
+					  <div class="media-object-section">
+					    <div class="thumbnail">
+					      <%= image_tag "chicktech.png" %>
+					    </div>
+					  </div>
+					  <div class="media-object-section madlib-title">
+					    <h1>Mad Libs</h1>
+						<h2>A Seattle ChickTech Workshop</h2>
+					  </div>
+					</div>
+				</section>
+			</section>
 
 		<section class="madlib-form row">
 			<div class="small-12 medium-6 columns">
@@ -125,7 +134,7 @@
           <!-- submit -->
 				<div class="small-12 columns">
 					<h3>Step #3:</h3>
-					<%= link_to "Generate MadLib", create_path  %>
+					<%= link_to "Generate MadLib", create_path, class: "large button" %>
 					</button>
 				</div>
 			</form>

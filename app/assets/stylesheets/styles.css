@@ -55,6 +55,7 @@ Refer to Foundation documentation first before adding our own styling!
 body {
 	font-size: 16px; /*this will be our base size, we'll use REM to multiply the size for different uses. 2REM is 2 x 16px = 32px, .5REM is 8px */
 	margin-bottom: 3em; /* gives us some space at the bottom of the page*/
+	color: #746759;
 }
 
 /* Global Styles */
@@ -65,16 +66,18 @@ body {
 }
 
 /* header styles */
+.madlib-title {
+	margin: .6rem auto 0 auto;
+}
 .madlib-title h1{
 	font-family: 'Neuton', serif;
-	margin: .6em auto 0 auto;
-	font-size: 4.5em;
+	font-size: 4rem;
 }
 
 .madlib-title h2{
 	font-family: 'Nunito', sans-serif;
 	font-size: 2rem;
-	margin-top: 0;
+	margin-top: -.8rem;
 	margin-bottom: .5rem;
 }
 
@@ -86,8 +89,8 @@ body {
 }
 
 .fill_in_word {
-	background-color: black;
-	color: white;
+	background-color: #4CBDC1;
+	color: #D95D91;
 	padding-right: .25rem;
 	padding-left: .25rem;
 	font-family: 'Walter Turncoat', cursive;
@@ -96,15 +99,16 @@ body {
 /*override foundation button colors and font */
 button,
 .button{
-	background-color: black;
-	color: white;
+	background-color: #D95D91;
+	color: #4CBDC1;
 	text-align: center;
 	font-family: 'Walter Turncoat', cursive;
 	font-size: 2.5rem;
 }
 button:hover,
 .button:hover {
-	background-color: #d3d3d3;
+	background-color: #4CBDC1;
+	color: #D95D91;
 }
 /*override foundation thumbnail effects on the header */
 
@@ -119,6 +123,12 @@ button:hover,
 	outline: none;
 	box-shadow: none;
 	-webkit-box-shadow: none;
+}
+.thumbnail img {
+	width: 30vw;
+	outline: none; /*if an image is also a link, you never want to remove this - but this is just a logo so we're removing the outline to make it prettier */
+	box-shadow: none;
+	border: none;
 }
 
 .hide {
