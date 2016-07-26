@@ -9,7 +9,7 @@
 	<!-- animate css from https://github.com/daneden/animate.css -->
 	<link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
 	<!-- our styles -->
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<%= stylesheet_link_tag "application", media: "all" %>
 	<title>Mad Libs</title>
 </head>
 
@@ -20,7 +20,7 @@
 					<div class="media-object stack-for-small">
 					  <div class="media-object-section">
 					    <div class="thumbnail">
-					      <img src="http://files.gamebanana.com/img/ico/sprays/jurassicpark1.gif">
+					      <%= image_tag "chicktech.png" %>
 					    </div>
 					  </div>
 					  <div class="media-object-section madlib-title">
@@ -34,9 +34,7 @@
 				<p>
 					No paper, no pen? No problem! Let's make some madlibs online. Click the button below to get started.
 				</p>
-				<a class="large button" href="mad_lib/new">
-					Get Started!
-				</a>
+				<%= link_to "Get Started", mad_lib_new_path, class: "large button" %> 
 			</section>
 		</div>
 	</body>
