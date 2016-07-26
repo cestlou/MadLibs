@@ -54,13 +54,14 @@
 			</div>
 			<div class="small-12 medium-6 columns">
 				<label>Choose your Madlib style
-				  <select id="madlib_form">
-				    <option value="blank"></option>
-				    <option value="video_game">Video Game</option>
-				    <option value="space">Kids in Space</option>
-				  </select>
+					<select id="madlib_form">
+						<option value="blank"></option>
+						<option value="video_game">Video Game</option>
+						<option value="space">Kids in Space</option>
+					</select>
 				</label>
 			</div>
+		</div>
 		</section>
 		<section class="madlib-form form-input">
 			<div class="small-12 columns">
@@ -71,8 +72,8 @@
 			<!-- repeat as necessary -->
 			  <div class="row hide" id="video_game">
 			    <div class="medium-6 columns">
-			      <label>Video Game Verb
-			        <input type="text" placeholder=".medium-6.columns">
+			      <label for="adjective" value="adjective">Video Game Adjective
+			        <%= text_field_tag :adjective %>
 			      </label>
 			      <label>Video Game Verb
 			        <input type="text" placeholder=".medium-6.columns">
@@ -82,12 +83,19 @@
 			      </label>
 			    </div>
 			    <div class="medium-6 columns">
-			      <label>Video Game Verb
+					  <label>Video Game Verb
               <input type="text" placeholder=".medium-6.columns">
             </label>
+					  </div>
           </div>
-        </div>
-
+						<!-- submit -->
+					<div class="small-12 columns">
+						<h3>Step #3:</h3>
+						<%= link_to "Generate Video Game MadLib", mad_lib_video_game_path  %>
+						</button>
+					</div>
+        </form>
+			 <form>
 				<div class="row hide" id="space">
         <div class="medium-6 columns">
 					<label>Plural Article of Clothing
@@ -129,12 +137,11 @@
 						<input type="text" placeholder=".medium-6.columns">
 					</label>
         </div>
-      </div>
           <!-- end repeat -->
           <!-- submit -->
 				<div class="small-12 columns">
 					<h3>Step #3:</h3>
-					<%= link_to "Generate MadLib", create_path, class: "large button" %>
+					<%= link_to "Generate Space MadLib", mad_lib_space_path  %>
 					</button>
 				</div>
 			</form>
