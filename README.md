@@ -103,18 +103,18 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 	- terminal: git push heroku master
 	- heroku open  
 
-- *And that's it! Now it's your turn to add to it and share with your friends.*
+- **And that's it! Now it's your turn to add to it and share with your friends.**
 
 
-- ** fun other things ** 
+- **fun other things** 
 
-- * Front End Jazz * -
+- **Front End Jazz**
 
 - Animation.css
-	..- this is just for some fun, and for anyone who likes seeing things on the screen move. CSS3 has made some great strides within page animation, with AND without javascript/jquery alongside it. Animation.css is a library that's <a href="https://github.com/daneden/animate.css">free on github</a> that allows us to animate pretty much anything in our webpages. You can also read how he accomplished his library if you want to make your own. 
+	- this is just for some fun, and for anyone who likes seeing things on the screen move. CSS3 has made some great strides within page animation, with AND without javascript/jquery alongside it. Animation.css is a library that's <a href="https://github.com/daneden/animate.css">free on github</a> that allows us to animate pretty much anything in our webpages. You can also read how he accomplished his library if you want to make your own. 
 - Gradient Generator 
-	..- for cool backgrounds and buttons. 
-	..- http://www.cssmatic.com/gradient-generator
+	- for cool backgrounds and buttons. 
+	- http://www.cssmatic.com/gradient-generator
 - Tutorials of all kind
-	..- https://teamtreehouse.com 
-	..- https://www.codecademy.com/
+	- https://teamtreehouse.com 
+	- https://www.codecademy.com/
