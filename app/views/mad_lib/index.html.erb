@@ -1,41 +1,23 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<!-- Foundation stylesheet -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.css" rel="stylesheet" type="text/css">
-	<!-- google fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Neuton:800|Nunito|Walter+Turncoat' rel='stylesheet' type='text/css'>
-
-	<!-- animate css from https://github.com/daneden/animate.css -->
-	<link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
-	<!-- our styles -->
-	<%= stylesheet_link_tag "application", media: "all" %>
-	<title>Mad Libs</title>
-</head>
-
-	<body>
-		<div class="row">
-			<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 column">
-				<section class="madlib-header row animated zoomIn">
-					<div class="media-object stack-for-small">
-					  <div class="media-object-section">
-					    <div class="thumbnail">
-					      <%= image_tag "chicktech.png" %>
-					    </div>
-					  </div>
-					  <div class="media-object-section madlib-title">
-					    <h1>Mad Libs</h1>
-						<h2>A Seattle ChickTech Workshop</h2>
-					  </div>
-					</div>
-				</section>
-			</section>
-			<section class="small-12 medium-8 medium-offset-2">
-				<p>
-					No paper, no pen? No problem! Let's make some madlibs online. Click the button below to get started.
-				</p>
-				<%= link_to "Get Started", mad_lib_new_path, class: "large button" %> 
-			</section>
-		</div>
-	</body>
-</html>
+<div class="row">
+	<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 column">
+		<section class="madlib-header row animated zoomIn">
+			<div class="media-object stack-for-small">
+			  <div class="media-object-section">
+			    <div class="thumbnail">
+			      <%= image_tag "chicktech.png" %>
+			    </div>
+			  </div>
+			  <div class="media-object-section madlib-title">
+			    <h1>Mad Libs</h1>
+				<h2>A Seattle ChickTech Workshop</h2>
+			  </div>
+			</div>
+		</section>
+	</section>
+	<section class="small-12 medium-8 medium-offset-2">
+		<p>
+			No paper, no pen? No problem! Let's make some madlibs online. Click the button below to get started.
+		</p>
+		<%= link_to "Get Started", mad_lib_new_path, class: "large button" %> 
+	</section>
+</div>
