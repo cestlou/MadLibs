@@ -1,137 +1,137 @@
 <!-- javascript specific to this page to hide and show various forms -->
-  <script>
-    $(document).ready(function(){
-    $('#madlib_form').on('change', function() {
-      if (this.value == 'video_game')
-      {
-		$("#video_game").addClass("show").removeClass("hide");
-		$("#space").addClass("hide");
-      }
-      else if (this.value == 'space')
-      {
-		$("#space").addClass("show").removeClass("hide");
-		$("#video_game").addClass("hide");
-      }
-		$('.madlib-form').show()
-    });
-    });
-  </script>
+<script>
+$(document).ready(function(){
+	$("#video_game", "#space").addClass(".hide");
+$('#madlib_form').on('change', function() {
+  if (this.value == 'video_game')
+  {
+	$("#video_game").addClass("show").removeClass("hide");
+	$("#space").addClass("hide");
+  }
+  else if (this.value == 'space')
+  {
+	$("#space").addClass("show").removeClass("hide");
+	$("#video_game").addClass("hide");
+  }
+	$('.madlib-form').show()
+});
+});
+</script>
 
 <!-- begin page -->
-	<section class="madlib-container">
-		<section class="small-12 column">
-				<section class="madlib-header row animated zoomIn">
-					<div class="media-object stack-for-small">
-					  <div class="media-object-section">
-					    <div class="thumbnail">
-					      <%= image_tag "chicktech.png" %>
-					    </div>
-					  </div>
-					  <div class="media-object-section madlib-title">
-					    <h1>Mad Libs</h1>
-						<h2>A Seattle ChickTech Workshop</h2>
-					  </div>
-					</div>
-				</section>
-			</section>
-
-		<section class="madlib-form row">
-			<div class="small-12 medium-6 columns">
-				<h3>Step #1:</h3>
-			</div>
-			<div class="small-12 medium-6 columns">
-				<label>Choose your Madlib style
-					<select id="madlib_form">
-						<option value="blank"></option>
-						<option value="video_game">Video Game</option>
-						<option value="space">Kids in Space</option>
-					</select>
-				</label>
-			</div>
-		</div>
-		</section>
-		<section class="madlib-form form-input">
-			<div class="small-12 columns">
-				<h3>Step #2:</h3>
-				<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
-			</div>
-      <%= form_tag("video_game", method: "post") do %>
-			<!-- repeat as necessary -->
-			  <div class="row hide" id="video_game">
-			    <div class="medium-6 columns">
-            <%= label_tag("Adjective")%>
-            <%= text_field_tag 'adjective' %>
-			      <label>Video Game Verb
-			        <input type="text" placeholder=".medium-6.columns">
-			      </label>
-			      <label>Video Game Verb
-			        <input type="text" placeholder=".medium-6.columns">
-			      </label>
+<section class="madlib-container">
+	<section class="small-12 column">
+		<section class="madlib-header row animated zoomIn">
+			<div class="media-object stack-for-small">
+			  <div class="media-object-section">
+			    <div class="thumbnail">
+			      <%= image_tag "chicktech.png" %>
 			    </div>
-			    <div class="medium-6 columns">
-					  <label>Video Game Verb
-              <input type="text" placeholder=".medium-6.columns">
-            </label>
-					  </div>
-          </div>
-						<!-- submit -->
-					<div class="small-12 columns">
-						<h3>Step #3:</h3>
-						<%= submit_tag "Generate Video Game MadLib" %>
-						</button>
-					</div>
-        <% end %>
-			 <form>
-				<div class="row hide" id="space">
-        <div class="medium-6 columns">
-					<label>Plural Article of Clothing
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Singular Article of Clothing
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Vehicle
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Type of Excercise
-			        <input type="text" placeholder=".medium-6.columns">
-			    </label>
-					<label>Verb
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Verb (2)
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-        </div>
-        <div class="medium-6 columns">
-          <%= label_tag("Time")%>
-            <%= text_field_tag 'time' %>
-					<label>Plural Food
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Singular Piece of Food
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Singular Piece of Food (2)
-			        <input type="text" placeholder=".medium-6.columns">
-			    </label>
-					<label>Number
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Noun
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-					<label>Verb (3)
-						<input type="text" placeholder=".medium-6.columns">
-					</label>
-        </div>
-          <!-- end repeat -->
-          <!-- submit -->
-				<div class="small-12 columns">
-					<h3>Step #3:</h3>
-					<%= link_to "Generate Space MadLib", mad_lib_space_path, class: "large button"%>
-					</button>
-				</div>
-			</form>
+			  </div>
+			  <div class="media-object-section madlib-title">
+			    <h1>Mad Libs</h1>
+				<h2>A Seattle ChickTech Workshop</h2>
+			  </div>
+			</div>
 		</section>
 	</section>
+
+	<section class="madlib-form row">
+		<div class="small-12 medium-6 columns">
+			<h3>Step #1:</h3>
+		</div>
+		<div class="small-12 medium-6 columns">
+			<label>Choose your Madlib style
+				<select id="madlib_form">
+					<option value="blank"></option>
+					<option value="video_game">Video Game</option>
+					<option value="space">Kids in Space</option>
+				</select>
+			</label>
+		</div>
+	</div>
+	</section>
+	<section class="madlib-form form-input">
+		<div class="small-12 columns">
+			<h3>Step #2:</h3>
+			<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
+		</div>
+  		<%= form_tag("video_game", method: "post") do %>
+		<!-- repeat as necessary -->
+		<div id="video_game" class="hide">
+			<div class="row">
+			    <div class="medium-6 columns">
+		        	<%= label_tag("Adjective")%>
+		        	<%= text_field_tag 'adjective' %>
+				    <label>Video Game Verb</label>
+				    <input type="text">
+				      
+				    <label>Video Game Verb </label>
+				    <input type="text"">		      
+				</div>
+				<div class="medium-6 columns">
+					<label>Video Game Verb</label>
+	          		<input type="text">
+				</div>
+	      	</div>
+			<!-- submit -->
+			<div class="small-12 columns">
+				<h3>Step #3:</h3>
+				<%= submit_tag "Generate Video Game MadLib", class: "large button" %>
+			</div>
+		</div>
+    <% end %>
+		<form>
+			<div class="row hide" id="space">
+    			<div class="medium-6 columns">
+				
+				<label>Plural Article of Clothing</label>
+				<input type="text">
+				
+				<label>Singular Article of Clothing</label>
+				<input type="text">
+
+				<label>Vehicle</label>
+				<input type="text">
+
+				<label>Type of Excercise</label>
+		        <input type="text">
+
+				<label>Verb</label>
+				<input type="text" placeholder=".medium-6.columns">
+				
+				<label>Verb (2)</label>
+				<input type="text" placeholder=".medium-6.columns">	
+    		</div>
+		    <div class="medium-6 columns">
+		      	<%= label_tag("Time")%>
+		        <%= text_field_tag 'time' %>
+				
+				<label>Plural Food</label>
+				<input type="text">
+				
+				<label>Singular Piece of Food</label>
+				<input type="text" placeholder=".medium-6.columns">
+		
+				<label>Singular Piece of Food (2)</label>
+		        <input type="text" placeholder=".medium-6.columns">
+
+				<label>Number</label>
+					<input type="text" placeholder=".medium-6.columns">
+
+				<label>Noun</label>
+				<input type="text" placeholder=".medium-6.columns">
+
+				<label>Verb (3)</label>
+					<input type="text" placeholder=".medium-6.columns">
+    		</div>
+      <!-- end repeat -->
+      <!-- submit -->
+			<div class="small-12 columns">
+				<h3>Step #3:</h3>
+				<%= link_to "Generate Space MadLib", space_path, class: "large button"%>
+				</button>
+			</div>
+		</form>
+	</section>
+</section>
