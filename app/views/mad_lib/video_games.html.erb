@@ -1,34 +1,17 @@
-<div class="row">
-	<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 column">
-		<section class="madlib-header row">
-			<div class="media-object stack-for-small">
-			  <div class="media-object-section">
-			    <div class="thumbnail">
-			    <%= image_tag "chicktech.png" %>
-			    </div>
-			  </div>
-			  <div class="media-object-section madlib-title">
-			    <h1>Mad Libs</h1>
-				<h2>[title of selected madlib]</h2>
-			  </div>
-			</div>
-		</section>
-		<section class="madlib-body row">
-			<div class="small-12 columns">
-				<hr>
-			</div>
-			<div class="small-12 columns">
-				<p>I, the <span class="fill_in_word"><%= @adjective %></span> and <span class="fill_in_word"><%= @adjective_2 %></span> <span class="fill_in_word"><%= @first_name %></span> has <span class="fill_in_word"><%= @past_tense_verb %></span> <span class="fill_in_word"><%= @first_name_2 %>'s</span> <span class="fill_in_word"><%= @adjective_3 %></span>sister and plans to steal her <span class="fill_in_word"><%= @adjective_4 %></span> <span class="fill_in_word"><%= @plural_noun %></span>! What are a <span class="fill_in_word"><%= @animal %></span> and backpacking <span class="fill_in_word"><%= @animal_2 %></span> to do?</p>
-				<p>Before you can help <span class="fill_in_word"><%= @name %></span>, you'll have to collect the <span class="fill_in_word"><%= @adjective_5 %></span> <span class="fill_in_word"><%= @plural_noun_2 %></span> and <span class="fill_in_word"><%= @adjective_6 %></span><span class="fill_in_word"><%= @plural_noun_3 %></span> that open up the <span class="fill_in_word"><%= @number %></span> worlds connected to <span class="fill_in_word"><%= @first_name %></span> lair. There are <span class="fill_in_word"><%= @number_2 %></span> <span class="fill_in_word"><%= @plural_noun_4 %></span> and <span class="fill_in_word"><%= @number_3 %></span> <span class="fill_in_word"><%= @plural_noun_5 %></span> in the game, along with hundreds of other goodies for you to find.
-				</p>
+<section class="madlib-body row">
+	<div class="small-12 columns">
+		<hr>
+	</div>
+	<div class="small-12 columns">
+		<p>I, the <span class="fill_in_word"><%= @adjective %></span> and <span class="fill_in_word"><%= @adjective_2 %></span> <span class="fill_in_word"><%= @first_name %></span> has <span class="fill_in_word"><%= @past_tense_verb %></span> <span class="fill_in_word"><%= @first_name_2 %>'s</span> <span class="fill_in_word"><%= @adjective_3 %></span>sister and plans to steal her <span class="fill_in_word"><%= @adjective_4 %></span> <span class="fill_in_word"><%= @plural_noun %></span>! What are a <span class="fill_in_word"><%= @animal %></span> and backpacking <span class="fill_in_word"><%= @animal_2 %></span> to do?</p>
+		<p>Before you can help <span class="fill_in_word"><%= @name %></span>, you'll have to collect the <span class="fill_in_word"><%= @adjective_5 %></span> <span class="fill_in_word"><%= @plural_noun_2 %></span> and <span class="fill_in_word"><%= @adjective_6 %></span><span class="fill_in_word"><%= @plural_noun_3 %></span> that open up the <span class="fill_in_word"><%= @number %></span> worlds connected to <span class="fill_in_word"><%= @first_name %></span> lair. There are <span class="fill_in_word"><%= @number_2 %></span> <span class="fill_in_word"><%= @plural_noun_4 %></span> and <span class="fill_in_word"><%= @number_3 %></span> <span class="fill_in_word"><%= @plural_noun_5 %></span> in the game, along with hundreds of other goodies for you to find.
+		</p>
 
-			</div>
-			<div class="small-12 columns">
-				<hr>
-			</div>
-			<div class="small-12 columns">
-				<%= link_to "Play Again!", new_path, class: "large button" %>
-			</div>
-		</section>
-	</section>
-</div>
+	</div>
+	<div class="small-12 columns">
+		<hr>
+	</div>
+	<div class="small-12 columns">
+		<%= link_to "Play Again!", new_path, class: "large button" %>
+	</div>
+</section>

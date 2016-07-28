@@ -19,36 +19,9 @@ $('#madlib_form').on('change', function() {
 </script>
 
 <!-- begin page -->
-<section class="madlib-container">
-	<section class="small-12 column">
-		<section class="madlib-header row animated zoomIn">
-			<div class="media-object stack-for-small">
-			  <div class="media-object-section">
-			    <div class="thumbnail">
-			      <%= image_tag "chicktech.png" %>
-			    </div>
-			  </div>
-			  <div class="media-object-section madlib-title">
-			    <h1>Mad Libs</h1>
-				<h2>A Seattle ChickTech Workshop</h2>
-			  </div>
-			</div>
-		</section>
-	</section>
-
-	<section class="madlib-form row">
-		<div class="small-12 medium-6 columns">
-			<h3>Step #1:</h3>
-		</div>
-		<div class="small-12 medium-6 columns">
-			<label>Choose your Madlib style
-				<select id="madlib_form">
-					<option value="blank"></option>
-					<option value="video_game">Video Game</option>
-					<option value="space">Kids in Space</option>
-				</select>
-			</label>
-		</div>
+<section class="madlib-form row">
+	<div class="small-12 medium-6 columns">
+		<h3>Step #1:</h3>
 	</div>
 	</section>
 	<section class="madlib-form form-input">
@@ -129,7 +102,17 @@ $('#madlib_form').on('change', function() {
 			<div class="small-12 columns">
 				<h3>Step #3:</h3>
 				<%= submit_tag "Generate Video Game MadLib", class: "large button" %>
+
 			</div>
+			<div class="medium-6 columns">
+				<label>Video Game Verb</label>
+          		<input type="text">
+			</div>
+      	</div>
+		<!-- submit -->
+		<div class="small-12 columns">
+			<h3>Step #3:</h3>
+			<%= submit_tag "Generate Video Game MadLib", class: "large button" %>
 		</div>
     <% end %>
     <%= form_tag("space", method: "post") do %>
@@ -184,4 +167,5 @@ $('#madlib_form').on('change', function() {
       </div>
     <% end %>
 	</section>
+
 </section>
