@@ -65,9 +65,9 @@ $('#madlib_form').on('change', function() {
 		        	<%= text_field_tag 'adjective' %>
 				    <label>Video Game Verb</label>
 				    <input type="text">
-				      
+
 				    <label>Video Game Verb </label>
-				    <input type="text"">		      
+				    <input type="text"">
 				</div>
 				<div class="medium-6 columns">
 					<label>Video Game Verb</label>
@@ -81,57 +81,56 @@ $('#madlib_form').on('change', function() {
 			</div>
 		</div>
     <% end %>
-		<form>
+    <%= form_tag("video_game", method: "post") do %>
 			<div class="row hide" id="space">
-    			<div class="medium-6 columns">
-				
-				<label>Plural Article of Clothing</label>
-				<input type="text">
-				
-				<label>Singular Article of Clothing</label>
-				<input type="text">
+        <div class="medium-6 columns">
+          <label>Plural Article of Clothing</label>
+          <input type="text">
 
-				<label>Vehicle</label>
-				<input type="text">
+          <label>Singular Article of Clothing</label>
+          <input type="text">
 
-				<label>Type of Excercise</label>
-		        <input type="text">
+          <label>Vehicle</label>
+          <input type="text">
 
-				<label>Verb</label>
-				<input type="text">
-				
-				<label>Verb (2)</label>
-				<input type="text">	
-    		</div>
-		    <div class="medium-6 columns">
-		      	<%= label_tag("Time")%>
-		        <%= text_field_tag 'time' %>
-				
-				<label>Plural Food</label>
-				<input type="text">
-				
-				<label>Singular Piece of Food</label>
-				<input type="text"">
-		
-				<label>Singular Piece of Food (2)</label>
-		        <input type="text">
+          <label>Type of Excercise</label>
+              <input type="text">
 
-				<label>Number</label>
-					<input type="text">
+          <label>Verb</label>
+          <input type="text">
 
-				<label>Noun</label>
-				<input type="text">
+          <label>Verb (2)</label>
+          <input type="text">
+          </div>
+          <div class="medium-6 columns">
+              <%= label_tag("Time")%>
+              <%= text_field_tag 'time' %>
 
-				<label>Verb (3)</label>
-					<input type="text">
-    		</div>
-      <!-- end repeat -->
-      <!-- submit -->
-			<div class="small-12 columns">
-				<h3>Step #3:</h3>
-				<%= link_to "Generate Space MadLib", space_path, class: "large button"%>
-				</button>
-			</div>
-		</form>
+          <label>Plural Food</label>
+          <input type="text">
+
+          <label>Singular Piece of Food</label>
+          <input type="text"">
+
+          <label>Singular Piece of Food (2)</label>
+              <input type="text">
+
+          <label>Number</label>
+            <input type="text">
+
+          <label>Noun</label>
+          <input type="text">
+
+          <label>Verb (3)</label>
+            <input type="text">
+          </div>
+        <!-- end repeat -->
+        <!-- submit -->
+        <div class="small-12 columns">
+          <h3>Step #3:</h3>
+          <%= link_to "Generate Space MadLib", space_path, class: "large button"%>
+			  </div>
+      </div>
+    <% end %>
 	</section>
 </section>

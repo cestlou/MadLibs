@@ -23,7 +23,6 @@ class MadLibController < ApplicationController
   end
 
   def create_space
-    params = params
     @time = params[:time]
     render :girls_in_space
   end
