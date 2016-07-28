@@ -106,7 +106,7 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 - **And that's it! Now it's your turn to add to it and share with your friends.**
 
 
-- **fun other things** 
+*fun other things*
 
 - **Front End Jazz**
 
