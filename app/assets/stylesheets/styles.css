@@ -18,30 +18,6 @@ Base Font size: 16px;
 Refer to Foundation documentation first before adding our own styling!
 */
 
-/* for our purposes, the screen is breaking funny with foundation so we are editing a few things so that this will look better on your devices */
-@media screen and (max-width: 680px){
-	.thumbnail img {
-		width: 80%;
-		height: auto;
-	}
-}
-
-@media screen and (max-width: 39.9375em){
-	.media-object.stack-for-small .media-object-section {
-		text-align: center;
-	}
-	.media-object.stack-for-small .media-object-section img{
-		width: 80%;
-		height: auto;
-	}
-	.media-object.stack-for-small .media-object-section {
-		padding-bottom: .1rem;
-	}
-	.madlib-body {
-		font-size: 2rem;
-	}
-}
-
 
 /* General reset for the page, so that things show up consistently */
 
@@ -61,13 +37,14 @@ body {
 /* Global Styles */
 
 .madlib-container {
-	width: 60%;
+	width: 80%;
 	margin: 0 auto; /*centers the page */
 }
 
 /* header styles */
 .madlib-title {
-	margin: .6rem auto 0 auto;
+	text-align: center;
+	margin: .6rem auto 1rem auto;
 }
 .madlib-title h1{
 	font-family: 'Neuton', serif;
@@ -76,9 +53,9 @@ body {
 
 .madlib-title h2{
 	font-family: 'Nunito', sans-serif;
-	font-size: 2rem;
+	font-size: 1.4rem;
 	margin-top: -.8rem;
-	margin-bottom: .5rem;
+	margin-bottom: 1rem;
 }
 
 
@@ -97,7 +74,7 @@ body {
 }
 
 /*override foundation button colors and font */
-button,
+
 .button{
 	background-color: #D95D91;
 	color: #4CBDC1;
@@ -105,40 +82,50 @@ button,
 	font-family: 'Walter Turncoat', cursive;
 	font-size: 2.5rem;
 }
-button:hover,
+
 .button:hover {
 	background-color: #4CBDC1;
 	color: #D95D91;
 }
-/*override foundation thumbnail effects on the header */
+/*override foundation thumbnail style for our image, which is bigger than foundation's normal and to get rid of the gross outline*/
 
-.thumbnail {
-	border: 0;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	transition: none;
-	outline: none;
-}
-.thumbnail:hover {
-	outline: none;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-}
-.thumbnail img {
-	width: 30vw;
-	outline: none; /*if an image is also a link, you never want to remove this - but this is just a logo so we're removing the outline to make it prettier */
-	box-shadow: none;
-	border: none;
-}
 
+/* classes that correspond with 
+javascript for showing or hiding 
+forms depending on what option is selected.
+*************************/
 .hide {
 	display: none;
 }
-
-.form-input {
-	display: none;
-}
-
 .show {
 	display: block;
 }
+
+
+
+
+/*MEDIA QUERIES 
+***************/
+/* You can tell the screen what to look 
+like depending on how large it is. 
+Here we are just switching the font size 
+when the screen is small
+this will look better on a phone, tablet AND laptop */
+
+
+@media screen and (max-width: 600px){
+	.madlib-title h1{
+		font-size: 2rem;
+	}
+	.madlib-title h2 {
+		font-size: 1rem;
+	}
+	.madlib-body {
+		font-size: 2rem;
+	}
+
+	.button {
+		margin: 0 auto;
+	}
+}
+
