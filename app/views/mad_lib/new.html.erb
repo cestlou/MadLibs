@@ -16,7 +16,7 @@
       }
 		$('.madlib-form').show()
     });
-  });
+    });
   </script>
 
 	<!-- Foundation stylesheet -->
@@ -68,13 +68,12 @@
 				<h3>Step #2:</h3>
 				<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
 			</div>
-			<form>
+      <%= form_tag("video_game", method: "post") do %>
 			<!-- repeat as necessary -->
 			  <div class="row hide" id="video_game">
 			    <div class="medium-6 columns">
-			      <label for="adjective" value="adjective">Video Game Adjective
-			        <%= text_field_tag :adjective %>
-			      </label>
+            <%= label_tag("Adjective")%>
+            <%= text_field_tag 'adjective' %>
 			      <label>Video Game Verb
 			        <input type="text" placeholder=".medium-6.columns">
 			      </label>
@@ -91,10 +90,10 @@
 						<!-- submit -->
 					<div class="small-12 columns">
 						<h3>Step #3:</h3>
-						<%= link_to "Generate Video Game MadLib", mad_lib_video_game_path  %>
+						<%= submit_tag "Generate Video Game MadLib" %>
 						</button>
 					</div>
-        </form>
+        <% end %>
 			 <form>
 				<div class="row hide" id="space">
         <div class="medium-6 columns">
@@ -118,6 +117,8 @@
 					</label>
         </div>
         <div class="medium-6 columns">
+          <%= label_tag("Time")%>
+            <%= text_field_tag 'time' %>
 					<label>Plural Food
 						<input type="text" placeholder=".medium-6.columns">
 					</label>
@@ -141,7 +142,7 @@
           <!-- submit -->
 				<div class="small-12 columns">
 					<h3>Step #3:</h3>
-					<%= link_to "Generate Space MadLib", mad_lib_space_path  %>
+					<%= link_to "Generate Space MadLib", space_path  %>
 					</button>
 				</div>
 			</form>

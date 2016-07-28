@@ -7,25 +7,36 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'mad_lib#index'
 
-  get 'mad_lib/new', to: 'mad_lib#new'
+  # get 'mad_lib/new', to: 'mad_lib#new'
 
   # post 'mad_lib/create' => 'mad_lib#create'
   #
   # get  'mad_lib/show_mad_lib', to: 'mad_lib#show'
 
-  post "create" => 'mad_lib#create'
+  # post "create" => 'mad_lib#create'
+  #
+  # get "create" => 'mad_lib#show'
+  #
+  # get "mad_lib/show" => 'mad_lib#show'
+  #
+  # get "mad_lib/video_game" => 'mad_lib#video_game'
+  #
+  # # post :video_game, to: "mad_lib#video_game", as: :mad_lib_video_game
+  #
+  # post "mad_lib/video_game" => 'mad_lib#video_game'
+  #
+  # post "mad_lib/space" => 'mad_lib#create_space'
+  #
+  # post :create, to: "mad_lib#create", as: :mad_lib_create
 
-  get "create" => 'mad_lib#show'
+  get 'new', to: 'mad_lib#new'
 
-  get "mad_lib/show" => 'mad_lib#show'
+  post 'video_game',to: 'mad_lib#video_game'
 
-  get "mad_lib/video_game" => 'mad_lib#create_video_game'
+  get 'space', to: 'mad_lib#create_space'
 
-  get "mad_lib/video_game" => 'mad_lib#create_video_game'
+  post 'space',to: 'mad_lib#create_space'
 
-  get "mad_lib/space" => 'mad_lib#create_space'
-
-  post :create, to: "mad_lib#create", as: :mad_lib_create
 
   get '*path' => redirect('/404.html'), via: :all
 

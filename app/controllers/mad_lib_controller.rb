@@ -14,18 +14,18 @@ class MadLibController < ApplicationController
     @variable = "hey I'm doing the right thing yay"
     @verb = params[:verb]
     @type = params[:type]
-    render :show
+    render :video_game
   end
 
-  def create_video_game
+  def video_game
     @adjective = params[:adjective]
 
-    render :video_games
   end
 
   def create_space
-    @adjective = params[:adjective]
-    render :video_games
+    params = params
+    @time = params[:time]
+    render :girls_in_space
   end
 
 
