@@ -33,9 +33,7 @@ Rails.application.routes.draw do
 
   post 'video_game',to: 'mad_lib#video_game'
 
-  get 'space', to: 'mad_lib#create_space'
-
-  post 'space',to: 'mad_lib#create_space'
+  post 'space', to: 'mad_lib#space'
 
 
   get '*path' => redirect('/404.html'), via: :all
