@@ -23,34 +23,86 @@ $('#madlib_form').on('change', function() {
 	<div class="small-12 medium-6 columns">
 		<h3>Step #1:</h3>
 	</div>
-	<div class="small-12 medium-6 columns">
-		<label>Choose your Madlib style
-			<select id="madlib_form">
-				<option value="blank"></option>
-				<option value="video_game">Video Game</option>
-				<option value="space">Kids in Space</option>
-			</select>
-		</label>
-	</div>
-</div>
-</section>
-<section class="madlib-form form-input">
-	<div class="small-12 columns">
-		<h3>Step #2:</h3>
-		<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
-	</div>
-		<%= form_tag("video_game", method: "post") do %>
-	<!-- repeat as necessary -->
-	<div id="video_game" class="hide">
-		<div class="row">
-		    <div class="medium-6 columns">
-	        	<%= label_tag("Adjective")%>
-	        	<%= text_field_tag 'adjective' %>
-			    <label>Video Game Verb</label>
-			    <input type="text">
-			      
-			    <label>Video Game Verb </label>
-			    <input type="text"">		      
+	</section>
+	<section class="madlib-form form-input">
+		<div class="small-12 columns">
+			<h3>Step #2:</h3>
+			<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
+		</div>
+  		<%= form_tag("video_game", method: "post") do %>
+		<!-- repeat as necessary -->
+		<div id="video_game" class="hide">
+			<div class="row">
+        <div class="medium-6 columns">
+          <%= label_tag("Adjective")%>
+          <%= text_field_tag 'adjective' %>
+
+          <%= label_tag("Adjective (2)")%>
+          <%= text_field_tag 'adjective_2' %>
+
+          <%= label_tag("Adjective (3)")%>
+          <%= text_field_tag 'adjective_3' %>
+
+          <%= label_tag("Adjective (4)")%>
+          <%= text_field_tag 'adjective_4' %>
+
+          <%= label_tag("Adjective (5)")%>
+          <%= text_field_tag 'adjective_5' %>
+
+          <%= label_tag("Adjective (6)")%>
+          <%= text_field_tag 'adjective_6' %>
+
+          <%= label_tag("Verb")%>
+          <%= text_field_tag 'verb' %>
+
+          <%= label_tag("Number")%>
+          <%= text_field_tag 'number' %>
+
+          <%= label_tag("Number (2)")%>
+          <%= text_field_tag 'number_2' %>
+
+          <%= label_tag("Number (3)")%>
+          <%= text_field_tag 'number_3' %>
+        </div>
+				<div class="medium-6 columns">
+          <%= label_tag("Name")%>
+          <%= text_field_tag 'name' %>
+
+          <%= label_tag("Name (2)")%>
+          <%= text_field_tag 'name_2' %>
+
+          <%= label_tag("Animal")%>
+          <%= text_field_tag 'animal' %>
+
+          <%= label_tag("Animal (2)")%>
+          <%= text_field_tag 'animal_2' %>
+
+          <%= label_tag("Past Tense Verb")%>
+          <%= text_field_tag 'past_tense_verb' %>
+
+          <%= label_tag("Plural Noun")%>
+          <%= text_field_tag 'plural_noun' %>
+
+          <%= label_tag("Plural Noun (2)")%>
+          <%= text_field_tag 'plural_noun_2' %>
+
+          <%= label_tag("Plural Noun (3)")%>
+          <%= text_field_tag 'plural_noun_3' %>
+
+          <%= label_tag("Plural Noun (4)")%>
+          <%= text_field_tag 'plural_noun_4' %>
+
+          <%= label_tag("Plural Noun (5)")%>
+          <%= text_field_tag 'plural_noun_5' %>
+				</div>
+	    </div>
+      </div>
+      <!-- end repeat -->
+			<!-- submit -->
+			<div class="small-12 columns">
+				<h3>Step #3:</h3>
+				<%= submit_tag "Generate Video Game MadLib", class: "large button" %>
+
 			</div>
 			<div class="medium-6 columns">
 				<label>Video Game Verb</label>
@@ -62,58 +114,58 @@ $('#madlib_form').on('change', function() {
 			<h3>Step #3:</h3>
 			<%= submit_tag "Generate Video Game MadLib", class: "large button" %>
 		</div>
-	</div>
-<% end %>
-	<form>
-		<div class="row hide" id="space">
-			<div class="medium-6 columns">
-			
-			<label>Plural Article of Clothing</label>
-			<input type="text">
-			
-			<label>Singular Article of Clothing</label>
-			<input type="text">
+    <% end %>
+    <%= form_tag("space", method: "post") do %>
+			<div class="row hide" id="space">
+        <div class="medium-6 columns">
+          <label>Plural Article of Clothing</label>
+          <input type="text">
 
-			<label>Vehicle</label>
-			<input type="text">
+          <label>Singular Article of Clothing</label>
+          <input type="text">
 
-			<label>Type of Excercise</label>
-	        <input type="text">
+          <label>Vehicle</label>
+          <input type="text">
 
-			<label>Verb</label>
-			<input type="text">
-			
-			<label>Verb (2)</label>
-			<input type="text">	
-		</div>
-	    <div class="medium-6 columns">
-	      	<%= label_tag("Time")%>
-	        <%= text_field_tag 'time' %>
-			
-			<label>Plural Food</label>
-			<input type="text">
-			
-			<label>Singular Piece of Food</label>
-			<input type="text"">
-	
-			<label>Singular Piece of Food (2)</label>
-	        <input type="text">
+          <label>Type of Excercise</label>
+              <input type="text">
 
-			<label>Number</label>
-				<input type="text">
+          <label>Verb</label>
+          <input type="text">
 
-			<label>Noun</label>
-			<input type="text">
+          <label>Verb (2)</label>
+          <input type="text">
+          </div>
+          <div class="medium-6 columns">
+              <%= label_tag("Time")%>
+              <%= text_field_tag 'time' %>
 
-			<label>Verb (3)</label>
-				<input type="text">
-		</div>
-  <!-- end repeat -->
-  <!-- submit -->
-		<div class="small-12 columns">
-			<h3>Step #3:</h3>
-			<%= link_to "Generate Space MadLib", space_path, class: "large button"%>
-			</button>
-		</div>
-	</form>
+          <label>Plural Food</label>
+          <input type="text">
+
+          <label>Singular Piece of Food</label>
+          <input type="text">
+
+          <label>Singular Piece of Food (2)</label>
+              <input type="text">
+
+          <label>Number</label>
+            <input type="text">
+
+          <label>Noun</label>
+          <input type="text">
+
+          <label>Verb (3)</label>
+            <input type="text">
+          </div>
+        <!-- end repeat -->
+        <!-- submit -->
+        <div class="small-12 columns">
+          <h3>Step #3:</h3>
+          <%= submit_tag "Generate Space MadLib", class: "large button"%>
+			  </div>
+      </div>
+    <% end %>
+	</section>
+
 </section>
