@@ -56,6 +56,8 @@ if [ ! -d ~/.rbenv ] ; then
     echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
     popd
+else
+    source ~/.bashrc
 fi
 
 # Install ruby.
