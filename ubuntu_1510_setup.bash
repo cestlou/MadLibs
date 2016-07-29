@@ -1,18 +1,19 @@
 #!/usr/bin/env bash
 #
+# To run:
+#
+#   curl -sSL bit.ly/ct16madlibs > setup.bash
+#   chmod +x setup.bash
+#   ./setup.bash
+#
 # https://gorails.com/setup/ubuntu/15.10
 
 set -e
 
 # Install apt packages
-echo "Running apt update..."
-sudo apt update -qq
-echo "Running apt dist-upgrade... (this can take a while)"
-sudo apt dist-upgrade -yqq \
-     >/dev/null \
-     2>/dev/null
-echo "Installing new packages..."
-sudo apt install -yqq \
+sudo apt update
+sudo apt dist-upgrade -y
+sudo apt install -y \
      git-core \
      curl \
      zlib1g-dev \
@@ -26,9 +27,7 @@ sudo apt install -yqq \
      libxslt1-dev \
      libcurl4-openssl-dev \
      python-software-properties \
-     libffi-dev \
-     >/dev/null \
-     2>/dev/null
+     libffi-dev
 
 # Create temp dir.
 tmpdir=$(mktemp -d --tmpdir install-rails-XXXXXXX)
@@ -72,7 +71,7 @@ rbenv rehash
 # Install NodeJS
 echo "Installing nodejs..."
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt install -yqq nodejs >/dev/null 2>/dev/null
+sudo apt install -y nodejs
 node --version
 npm version
 
@@ -85,6 +84,6 @@ rails -v
 
 # Install heroku toolbelt.
 echo "Installing heroku toolbelt..."
-wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh >/dev/null 2>/dev/null
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku version
 heroku version
