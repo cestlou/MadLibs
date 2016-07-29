@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 #
-# To run:
-#
-#   curl -sSL bit.ly/ct16madlibs > setup.bash
-#   chmod +x setup.bash
-#   ./setup.bash
-#
 # https://gorails.com/setup/ubuntu/15.10
 
 set -e
@@ -79,11 +73,16 @@ npm version
 gem install rails -v 4.2.6
 rbenv rehash
 
-# Ensure rails was installed correctly.
-rails -v
-
 # Install heroku toolbelt.
 echo "Installing heroku toolbelt..."
 wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 heroku version
 heroku version
+
+# Install Atom.
+wget https://github.com/atom/atom/releases/download/v1.8.0/atom-amd64.deb -O atom-amd64.deb
+dpkg -i atom-amd64.deb
+sudo apt-get install -fy
+
+# Install rails package for Atom.
+apm install language-ruby-on-rails
