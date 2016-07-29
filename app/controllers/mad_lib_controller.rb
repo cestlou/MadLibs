@@ -48,6 +48,8 @@ class MadLibController < ApplicationController
     @verb_3 = params[:verb_3]
     @verb_4 = params[:verb_4]
     @noun = params[:noun]
+    @number = params[:number]
+    @animal = params[:animal]
 
     render :girls_in_space
   end
