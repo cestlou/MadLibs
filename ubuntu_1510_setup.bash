@@ -6,7 +6,7 @@ set -e
 
 # Install apt packages
 echo "Running apt update..."
-sudo apt update
+sudo apt update -qq
 echo "Running apt dist-upgrade... (this can take a while)"
 sudo apt dist-upgrade -yqq
 echo "Installing new packages..."
