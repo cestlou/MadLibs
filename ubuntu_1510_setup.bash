@@ -43,7 +43,9 @@ git clone https://github.com/thomasvandoren/MadLibs $tmpdir/MadLibs
 cd $tmpdir/MadLibs
 
 # Setup rbenv.
-if [ ! -d ~/.rbenv ] ; then
+if [ -d ~/.rbenv ] ; then
+    source ~/.bashrc
+else
     pushd ~
     echo 'export RUBY_CONFIGURE_OPTS=--disable-install-doc' >> ~/.bashrc
     git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -55,8 +57,6 @@ if [ ! -d ~/.rbenv ] ; then
     echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
     source ~/.bashrc
     popd
-else
-    source ~/.bashrc
 fi
 
 # Install ruby.
