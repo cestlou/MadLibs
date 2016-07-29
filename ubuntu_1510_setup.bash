@@ -5,9 +5,12 @@
 set -e
 
 # Install apt packages
+echo "Running apt update..."
 sudo apt update
-sudo apt dist-upgrade -y
-sudo apt install -y \
+echo "Running apt dist-upgrade... (this can take a while)"
+sudo apt dist-upgrade -yqq
+echo "Installing new packages..."
+sudo apt install -yqq \
      git-core \
      curl \
      zlib1g-dev \
