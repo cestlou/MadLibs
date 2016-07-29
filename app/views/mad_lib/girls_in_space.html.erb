@@ -1,9 +1,21 @@
-Girls in Space
+<section class="madlib-body row">
+	<div class="small-12 columns">
+		Girls in Space
+		<hr>
+	</div>
+	<div class="small-12 columns">
+		<p>What if you lived on the International Space Station? Imagine your normal day as it is now, but in space!</p>
 
-What if you lived on the International Space Station? Imagine your normal day as it is now, but in space!
+		<p>In the morning, you get up at <span class="fill_in_word"><%= @time %></span> and get dressed in your space <span class="fill_in_word"><%= @clothing_plural %></span> and space <span class="fill_in_word"><%= @clothing_singular %></span>. There is no gravity in space, so you float into the kitchen to eat your breakfast of dried <span class="fill_in_word"><%= @food_plural %></span>, <span class="fill_in_word"><%= @food_singular %></span> in a tube, and smashed up <span class="fill_in_word"><%= @food_singular_2 %></span> in a plastic space container. Then, instead of taking the bus to school, you hop into <span class="fill_in_word"><%= @vehicle %></span> and orbit Earth <span class="fill_in_word"><%= @number %></span> times.</p>
 
-In the morning, you get up at <%= @time %> and get dressed in your space <%= @clothing_plural %> and space <%= @clothing_singular %>. There is no gravity in space, so you float into the kitchen to eat your breakfast of dried <%= @food_plural %>, <%= @food_singular %> in a tube, and smashed up <%= @food_singular_2 %> in a plastic space container. Then, instead of taking the bus to school, you hop into <%= @vehicle %> and orbit Earth <%= @number %> times.
-
-In the vehicle, you do <%= @adjective %> science experiments such as determining how good <%= @animal %> is at <%= @verb %>ing in space. When the experiments are done, you go outside the <%= @vehicle %> for some <%= @exercise %> in space. You <%= @verb %> outside the <%= @vehicle %> for an hour or more. When you are done <%= @exercise %>ing, you go back to the International Space Station for other activities such as <%= @verb_2 %>ing, <%= @verb_3 %>ing, and <%= @verb_4 %>ing.
-
-You end the day by sending a(n) <%= @noun %> to your parents via the space computer, and they tell you goodnight from Earth, down below.
+		<p>In the vehicle, you do <span class="fill_in_word"><%= @adjective %></span> science experiments such as determining how good <span class="fill_in_word"><%= @animal %></span> is at <span class="fill_in_word"><%= @verb %></span> in space. When the experiments are done, you go outside the <span class="fill_in_word"><%= @vehicle %></span>> for some <span class="fill_in_word"><%= @exercise %></span> in space. You <span class="fill_in_word"><%= @verb %></span> outside the <span class="fill_in_word"><%= @vehicle %></span> for an hour or more. When you are done <span class="fill_in_word"><%= @exercise %></span>, you go back to the International Space Station for other activities such as <span class="fill_in_word"><%= @verb_2 %></span>, <span class="fill_in_word"><%= @verb_3 %></span>, and <span class="fill_in_word"><%= @verb_4 %></span>.</p>
+		<p>
+		You end the day by sending a(n) <span class="fill_in_word"><%= @noun %></span>. to your parents via the space computer, and they tell you goodnight from Earth, down below.</p>
+	</div>
+	<div class="small-12 columns">
+		<hr>
+	</div>
+	<div class="small-12 columns">
+		<%= link_to "Play Again!", new_path, class: "large button" %>
+	</div>
+</section>
