@@ -24,7 +24,7 @@ $('#madlib_form').on('change', function() {
 		<h3>Step #1:</h3>
 	</div>
 	</section>
-	<section class="madlib-form form-input">
+	<section>
 		<div class="small-12 columns">
 			<h3>Step #2:</h3>
 			<p>Fill out the below adjectives, nouns, adverbs and verbs accordingly.</p>
@@ -32,7 +32,7 @@ $('#madlib_form').on('change', function() {
   		<%= form_tag("video_game", method: "post") do %>
 		<!-- repeat as necessary -->
 		<div id="video_game" class="hide">
-			<div class="row">
+		<div class="row">
         <div class="medium-6 columns">
           <%= label_tag("Adjective")%>
           <%= text_field_tag 'adjective' %>
@@ -64,7 +64,7 @@ $('#madlib_form').on('change', function() {
           <%= label_tag("Number (3)")%>
           <%= text_field_tag 'number_3' %>
         </div>
-				<div class="medium-6 columns">
+		<div class="medium-6 columns">
           <%= label_tag("Name")%>
           <%= text_field_tag 'name' %>
 
@@ -94,7 +94,7 @@ $('#madlib_form').on('change', function() {
 
           <%= label_tag("Plural Noun (5)")%>
           <%= text_field_tag 'plural_noun_5' %>
-				</div>
+			</div>
 	    </div>
       </div>
       <!-- end repeat -->
