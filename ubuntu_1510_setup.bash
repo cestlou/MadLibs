@@ -8,7 +8,9 @@ set -e
 echo "Running apt update..."
 sudo apt update -qq
 echo "Running apt dist-upgrade... (this can take a while)"
-sudo apt dist-upgrade -yqq
+sudo apt dist-upgrade -yqq \
+     >/dev/null \
+     2>/dev/null
 echo "Installing new packages..."
 sudo apt install -yqq \
      git-core \
@@ -24,7 +26,9 @@ sudo apt install -yqq \
      libxslt1-dev \
      libcurl4-openssl-dev \
      python-software-properties \
-     libffi-dev
+     libffi-dev \
+     >/dev/null \
+     2>/dev/null
 
 # Create temp dir.
 tmpdir=$(mktemp -d --tmpdir install-rails-XXXXXXX)
