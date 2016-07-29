@@ -70,8 +70,9 @@ gem install bundler
 rbenv rehash
 
 # Install NodeJS
+echo "Installing nodejs..."
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
-sudo apt install -y nodejs
+sudo apt install -yqq nodejs >/dev/null 2>/dev/null
 node --version
 npm version
 
@@ -83,6 +84,7 @@ rbenv rehash
 rails -v
 
 # Install heroku toolbelt.
-wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+echo "Installing heroku toolbelt..."
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh >/dev/null 2>/dev/null
 heroku version
 heroku version
