@@ -1,0 +1,83 @@
+/*
+Made for ChickTech Seattle Chapter July Workshop 2016
+*******************
+
+Fonts
+
+Base font:
+font-family: 'Nunito', sans-serif;
+Heading font (pretty close to the MadLibs font):
+font-family: 'Neuton', serif;
+Fill in the Blank Word Type Label (handwriting esque):
+font-family: 'Walter Turncoat', cursive;
+*******************
+
+Base Font size: 16px; (when we use root em it will be based off this, so 2rem is 2 x 16 wich is 28px)
+*******************
+
+Refer to Foundation documentation first before adding our own styling!
+*/
+
+/* Add in global styles here */
+
+/* Results page styling*/
+/*.madlib-body {
+	font-size: 2.5rem; 
+	line-height: 6rem; 
+}*/
+
+/*.fill_in_word {
+	background-color: #4CBDC1;
+	color: #D95D91;
+	padding-right: .25rem; 
+	padding-left: .25rem; 
+	font-family: 'Walter Turncoat', cursive;
+}*/
+
+/*override foundation button colors and font */
+
+/* add in buttons here */
+
+
+/*override foundation thumbnail style for our image, which is bigger than foundation's normal and to get rid of the gross outline*/
+
+
+/* classes that correspond with 
+javascript for showing or hiding 
+forms depending on what option is selected.
+*************************/
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+
+
+
+/*MEDIA QUERIES 
+***************/
+/* You can tell the screen what to look 
+like depending on how large it is. 
+Here we are just switching the font size 
+when the screen is small
+this will look better on a phone, tablet AND laptop */
+
+
+@media screen and (max-width: 600px){
+	.madlib-title h1{
+		font-size: 2rem;
+	}
+	.madlib-title h2 {
+		font-size: 1rem;
+	}
+	.madlib-body {
+		font-size: 2rem;
+	}
+
+	.button {
+		margin: 0 auto;
+	}
+}
+
