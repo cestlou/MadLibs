@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  # get 'mad_lib/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -7,31 +6,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'mad_lib#index'
 
-  # get 'mad_lib/new', to: 'mad_lib#new'
-
-  # post 'mad_lib/create' => 'mad_lib#create'
-  #
-  # get  'mad_lib/show_mad_lib', to: 'mad_lib#show'
-
-  # post "create" => 'mad_lib#create'
-  #
-  # get "create" => 'mad_lib#show'
-  #
-  # get "mad_lib/show" => 'mad_lib#show'
-  #
-  # get "mad_lib/video_game" => 'mad_lib#video_game'
-  #
-  # # post :video_game, to: "mad_lib#video_game", as: :mad_lib_video_game
-  #
-  # post "mad_lib/video_game" => 'mad_lib#video_game'
-  #
-  # post "mad_lib/space" => 'mad_lib#create_space'
-  #
-  # post :create, to: "mad_lib#create", as: :mad_lib_create
-
   get 'new', to: 'mad_lib#new'
 
-  post 'video_game',to: 'mad_lib#video_game'
+  post 'video_game', to: 'mad_lib#video_game'
 
   post 'space', to: 'mad_lib#space'
 
