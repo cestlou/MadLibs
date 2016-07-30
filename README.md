@@ -47,7 +47,7 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 
 - **Our Backend Resources**
 	- The Backend is where data that is input on the front end comes to be ingested, manipulated, and stored. It's where a database would normally live (though we don't have one, for this project). This project is built using the Ruby programming language and the Rails framework. A lot of the time, you will hear "Ruby on Rails" and it can easily be misinterpreted as being one thing, because the two are used together so frequently.
-	- Luna to put stuff here
+	- Gemfile -- this is where our code's dependencies live. Think about it like this: we need certain things (like jQuery) that are packaged into "gems." This is how a person or team can build a product, compact it and store it in the vast Gem library, and let it be used by others in the community.
 
 ## Let's do it! ##
 
@@ -82,7 +82,6 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 	- We'll leave this open and come back after we initialize some stuff
 - **Initialize the code base!**
 	- Ruby is a very particular language that has a good few rules, to obey them better we're going to install a few things it relies on. Bring that terminal window back and type the following in this order, hitting enter after every line.
-	- Open up an instance of a terminal. Paste this into the window: `
 	- rbenv global
 	- gem install rails
 	- bundle install
@@ -99,11 +98,10 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 		- git push (then follow the prompt your terminal gives you, it should be something like "git push origin master" but you'll only have to do that one time)
 
 - **Deploy**
-	- We will be using <a href="#">Heroku</a> to deploy our finished madlib project. It's free, it works great with Github, and you feel a bit like a mad scientist doing it.
+	- We will be using <a href="https://www.heroku.com/">Heroku</a> to deploy our finished madlib project. It's free, it works great with Github, and you feel a bit like a mad scientist doing it.
 	- Sign up for an account on Heroku: https://signup.heroku.com/login
-	- Go here: https://toolbelt.heroku.com/
-	- Download the toolbelt and follow the directions on this page.
 	- navigate your terminal to your working madlib game, do this by typing "cd [your directory here]" (we'll go over this more together)
+	- terminal: heroku login
 	- terminal: heroku create YOUR_APP_NAME_HERE
 	- if you got an error type git remote -v and call us over for help.
 	- If you didn't get any errors...
