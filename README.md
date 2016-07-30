@@ -47,6 +47,8 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 - **Our Backend Resources**
 	- The Backend is where data that is input on the front end comes to be ingested, manipulated, and stored. It's where a database would normally live (though we don't have one, for this project). This project is built using the Ruby programming language and the Rails framework. A lot of the time, you will hear "Ruby on Rails" and it can easily be misinterpreted as being one thing, because the two are used together so frequently.
 	- Gemfile -- this is where our code's dependencies live. Think about it like this: we need certain things (like jQuery) that are packaged into "gems." This is how a person or team can build a product, compact it and store it in the vast Gem library, and let it be used by others in the community.
+	- Ruby && Rails Docs -- Documentation will be your best friend throughout learning how to code. Don't understand a word, or phrase? Google it, or ask someone who may know!
+      - [Rails Docs](http://guides.rubyonrails.org/), [Ruby Docs](https://www.ruby-lang.org/en/documentation/)
 
 ## Let's do it! ##
 
