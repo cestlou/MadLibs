@@ -89,7 +89,6 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 
 - **Test Often!**
 	- To make sure we have a proper rails project go to your terminal and type "rails s" - this will start your local server. In your browser go to localhost:3000 to check it out.
-
 - **Commit often!**
 	- You'll want to save your work, we're already in github so we might as well save our progress there!
 	- From your terminal type
