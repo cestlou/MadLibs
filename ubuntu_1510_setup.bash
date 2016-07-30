@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 #
 # https://gorails.com/setup/ubuntu/15.10
+#
+# This script was used to setup the Ubuntu laptops prior to the workshop on
+# 2016-07-30. It may or may not be reusable. It is left here for reference, and
+# is not needed for the actual workshop.
 
 set -e
 
