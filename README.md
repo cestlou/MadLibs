@@ -69,7 +69,6 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 - **Cloning a Repo**
 
 	- What now? Programming is full of phrases like this. When you clone a repo you are copying down all of the files in a project so that you too can work on it. The coolest part is that while it's the same project, it's your own version of it (or your own branch, as GitHub calls it), so you can make changes, add stuff, delete things and then if you think it's something the owner of the code would want to include in the main copy of the project you can submit it to them via a pull request to add in to their code. Just make sure to create a branch, as things in "Master" are pushed to the parent (original) copy! We won't be doing this today, but it is helpful if you and some friends want to make something together.
-
 	- Open this link: https://github.com/CestLou/MadLibs
 	- Click the green button on the right side that says "Clone or Download"
 	- Select "Clone with HTTPS"
@@ -86,11 +85,10 @@ Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generato
 	- rbenv global
 	- gem install rails
 	- bundle install
-	- Ruby 2.2.4
+	- ruby -v should return `Ruby 2.2.4`, please see one of us if it doesn't
 
 - **Test Often!**
-	- To make sure we have a proper rails project go to your terminal and type "rails s" - this will start your local server. In your browser go to localhost:3000/index.html to check it out.
-
+	- To make sure we have a proper rails project go to your terminal and type "rails s" - this will start your local server. In your browser go to localhost:3000 to check it out.
 - **Commit often!**
 	- You'll want to save your work, we're already in github so we might as well save our progress there!
 	- From your terminal type
