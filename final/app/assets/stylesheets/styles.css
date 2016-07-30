@@ -1,0 +1,122 @@
+/*
+Made for ChickTech Seattle Chapter July Workshop 2016
+*******************
+
+Fonts
+
+Base font:
+font-family: 'Nunito', sans-serif;
+Heading font (pretty close to the MadLibs font):
+font-family: 'Neuton', serif;
+Fill in the Blank Word Type Label (handwriting esque):
+font-family: 'Walter Turncoat', cursive;
+*******************
+
+Base Font size: 16px; (when we use root em it will be based off this, so 2rem is 2 x 16 wich is 28px)
+*******************
+
+Refer to Foundation documentation first before adding our own styling!
+*/
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px; /*this will be our base size, we'll use REM to multiply the size for different uses. 2REM is 2 x 16px = 32px, .5REM is 8px */
+	margin-bottom: 3rem; /*3 x 16px is 48px*/
+	color: #746759;
+}
+
+/* Global Styles */
+
+.madlib-container {
+	width: 80%;
+	margin: 0 auto; /*centers the page */
+}
+
+/* header styles */
+.madlib-title {
+	text-align: center;
+	margin: .6rem auto 1rem auto; /*(9.6px auto 16px auto) */
+}
+.madlib-title h1{
+	font-family: 'Neuton', serif;
+	font-size: 4rem; /*(64px)*/
+}
+
+.madlib-title h2{
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.4rem;/*(22.4px)*/
+	margin-top: -.8rem; /*(-12.8px)*/
+	margin-bottom: 1rem; /*(16px)*/
+}
+
+
+/* Results page styling*/
+.madlib-body {
+	font-size: 2.5rem; /*(40px)*/
+	line-height: 6rem; /*(96px)*/
+}
+
+.fill_in_word {
+	background-color: #4CBDC1;
+	color: #D95D91;
+	padding-right: .25rem; /*(4px)*/
+	padding-left: .25rem; /*(4px)*/
+	font-family: 'Walter Turncoat', cursive;
+}
+
+/*override foundation button colors and font */
+
+.button{
+	background-color: #D95D91;
+	color: #4CBDC1;
+	text-align: center;
+	font-family: 'Walter Turncoat', cursive;
+	font-size: 2.5rem; /*(40px)*/
+}
+
+.button:hover {
+	background-color: #4CBDC1;
+	color: #D95D91;
+}
+/*override foundation thumbnail style for our image, which is bigger than foundation's normal and to get rid of the gross outline*/
+
+
+/* classes that correspond with 
+javascript for showing or hiding 
+forms depending on what option is selected.
+*************************/
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+
+
+
+
+/*MEDIA QUERIES 
+***************/
+/* You can tell the screen what to look 
+like depending on how large it is. 
+Here we are just switching the font size 
+when the screen is small
+this will look better on a phone, tablet AND laptop */
+
+
+@media screen and (max-width: 600px){
+	.madlib-title h1{
+		font-size: 2rem;
+	}
+	.madlib-title h2 {
+		font-size: 1rem;
+	}
+	.madlib-body {
+		font-size: 2rem;
+	}
+
+	.button {
+		margin: 0 auto;
+	}
+}
+
