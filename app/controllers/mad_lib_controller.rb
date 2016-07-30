@@ -4,10 +4,6 @@ class MadLibController < ApplicationController
     @mad_lib = []
   end
 
-  def new
-
-  end
-
   def video_game
     @adjective = params[:adjective]
     @adjective_2 = params[:adjective_2]
@@ -31,6 +27,11 @@ class MadLibController < ApplicationController
     @plural_noun_5 = params[:plural_noun_5]
 
     render :video_game
+
+    # more efficient, less verbose form of injesting form parameters. in the controller method:
+    # @mad_lib_fields = params
+    # and, repeated as necessary in the view:
+    # @mad_lib_fields[:adjective]
   end
 
   def space
@@ -50,30 +51,8 @@ class MadLibController < ApplicationController
     @noun = params[:noun]
     @number = params[:number]
     @animal = params[:animal]
+    @adjective = params[:adjective]
 
     render :girls_in_space
   end
-
-
-  def verb
-
-  end
-
-  def lib_param
-    params.require(:mad_lib).permit()
-  end
-
-# if we had a model things would look kinda like this:
-
-# def create
-#   @mad_lib = MadLib.new(lib_param)
-#
-#   if @mad_lib.save
-#     redirect_to :action => 'list'
-#   else
-#     @mad_libs = MadLib.all
-#     render :action => 'new'
-#   end
-# end
-
 end
