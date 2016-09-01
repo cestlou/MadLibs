@@ -1,5 +1,6 @@
 # madlibsFED
 Front End Templating for ChickTech Seattle July Workshop - Mad Lib Ruby Generator
+Written and taught by Brittany Feenstra and Luna Alison Alvarez
 
 
 #What we're building
